@@ -10,8 +10,8 @@
     <form id="form1" runat="server">
         <div>
             Hours Worked on Project:
-            <asp:TextBox ID="hoursTextBox" runat="server"></asp:TextBox>
-&nbsp;<asp:Button ID="addButton" runat="server" OnClick="addButton_Click" Text="Add Hours" />
+            <asp:TextBox ID="hoursTextBox" runat="server" BackColor="#CCFF99"></asp:TextBox>
+&nbsp;<asp:Button ID="addButton" runat="server" BackColor="#009933" OnClick="addButton_Click" Text="Add Hours" />
             <br />
             <br />
             <asp:Label ID="resultLabel" runat="server"></asp:Label>

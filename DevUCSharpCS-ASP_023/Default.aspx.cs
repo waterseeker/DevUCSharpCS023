@@ -33,7 +33,17 @@ namespace DevUCSharpCS_ASP_023
             hours[newestItem] = double.Parse(hoursTextBox.Text);
 
             ViewState["Hours"] = hours;
-            resultLabel.Text = String.Format("Total Hours: {0}", hours.Sum());
+            resultLabel.Text = String.Format(
+                "Total Hours: {0}<br />" +
+                "Most Hours: {1}<br />" +
+                "Least Hours: {2}<br />" +
+                "Average Hours: {3}<br />", 
+                hours.Sum(),
+                hours.Max(),
+                hours.Min(),
+                hours.Average()
+                );
+
             hoursTextBox.Text = "";
         }
     }
