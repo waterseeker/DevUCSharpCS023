@@ -26,6 +26,15 @@ namespace DevUCSharpCS_ASP_023
             //resize looks at hours, adds one to the length, and then created a new array that 
             //contains the old one +1 position
             Array.Resize(ref hours, hours.Length + 1);
+
+            //grabs the highest numerical index in the hours array
+            int newestItem = hours.GetUpperBound(0);
+            //store whatever the user entered in hoursTextBox.Text
+            hours[newestItem] = double.Parse(hoursTextBox.Text);
+
+            ViewState["Hours"] = hours;
+            resultLabel.Text = String.Format("Total Hours: {0}", hours.Sum());
+            hoursTextBox.Text = "";
         }
     }
 }
