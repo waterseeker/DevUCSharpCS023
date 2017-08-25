@@ -11,7 +11,7 @@
         <div>
             Hours Worked on Project:
             <asp:TextBox ID="hoursTextBox" runat="server"></asp:TextBox>
-&nbsp;<asp:Button ID="addButton" runat="server" Text="Add Hours" />
+&nbsp;<asp:Button ID="addButton" runat="server" OnClick="addButton_Click" Text="Add Hours" />
             <br />
             <br />
             <asp:Label ID="resultLabel" runat="server"></asp:Label>
