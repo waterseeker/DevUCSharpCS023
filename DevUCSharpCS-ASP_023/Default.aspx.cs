@@ -23,7 +23,7 @@ namespace DevUCSharpCS_ASP_023
             //casts ViewState contents as double
             double[] hours = (double[])ViewState["Hours"];
 
-            //resize looks at hours, adds one to the length, and then created a new array that 
+            //resize is looking at hours, adding one to the length, and then creating a new array that 
             //contains the old one +1 position
             Array.Resize(ref hours, hours.Length + 1);
 
